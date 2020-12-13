@@ -1,3 +1,6 @@
+# TODO
+- Add tags for the markdown files
+
 # 🏗️ Boilerplate for Nuxt, Tailwind & NetlifyCMS
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cb2d4cc5-8a65-4940-81ce-4456ff96e6db/deploy-status)](https://app.netlify.com/sites/ntn-boilerplate/deploys) ← replace with [your own](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/general#deploy-status-badge)
