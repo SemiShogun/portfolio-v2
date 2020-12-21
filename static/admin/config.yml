@@ -62,7 +62,7 @@ collections:
               label: Tag,
               name: tag,
               widget: relation,
-              collection: 'tags',
+              collection: 'meta',
               searchFields: ['tags.*.name'],
               displayFields: ['tags.*.slug'],
               valueField: 'tags.*.slug',
