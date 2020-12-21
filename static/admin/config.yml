@@ -97,11 +97,10 @@ collections:
     editor:
       preview: false
     files:
-      fields:
-        - name: 'tags'
-          label: 'Tags'
-          file: 'assets/content/meta/tags.json'
-          description: 'Contains list of tags'
-          fields:
-            - { label: 'Slug', name: 'slug', widget: 'string', hint: 'URL identifier' }
-            - { label: 'Display Name', name: 'name', widget: 'string', hint: 'Tag name to be displayed' }
+      - name: 'tags'
+        label: 'Tags'
+        file: 'assets/content/meta/tags.json'
+        description: 'Contains list of tags'
+        fields:
+          - { label: 'Slug', name: 'slug', widget: 'string', hint: 'URL identifier' }
+          - { label: 'Display Name', name: 'name', widget: 'string', hint: 'Tag name to be displayed' }
