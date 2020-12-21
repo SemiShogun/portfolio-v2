@@ -1,4 +1,10 @@
 {
   "slug": "programming",
-  "name": "Programming"
+  "name": "Programming",
+  "tags": [
+    {
+      "slug": "Hello",
+      "name": "Hello"
+    }
+  ]
 }
