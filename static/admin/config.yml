@@ -95,7 +95,7 @@ collections:
     delete: false
     editor:
       preview: false
-    file:
+    files:
       - label: 'Tags'
         name: 'tags'
         file: 'assets/content/tags.json'
