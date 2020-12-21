@@ -57,7 +57,7 @@ collections:
           widget: 'list',
           summary: '{{fields.tag}}',
           required: false,
-          field: { label: Tag, name: tag, widget: relation, collection: 'assets/content/meta', file: 'tags' },
+          field: { label: Tag, name: tag, widget: relation, collection: 'meta', file: 'tags' },
         }
   - name: 'projects'
     # identifier_field: name
@@ -87,10 +87,11 @@ collections:
     editor:
       preview: false
     files:
-      - name: 'tags'
-        label: 'Tags'
-        file: 'assets/content/meta/tags.json'
-        description: 'Contains list of tags'
-        fields:
-          - { label: 'Slug', name: 'slug', widget: 'string', hint: 'URL identifier' }
-          - { label: 'Display Name', name: 'name', widget: 'string', hint: 'Tag name to be displayed' }
+      fields:
+        - name: 'tags'
+          label: 'Tags'
+          file: 'assets/content/meta/tags.json'
+          description: 'Contains list of tags'
+          fields:
+            - { label: 'Slug', name: 'slug', widget: 'string', hint: 'URL identifier' }
+            - { label: 'Display Name', name: 'name', widget: 'string', hint: 'Tag name to be displayed' }
