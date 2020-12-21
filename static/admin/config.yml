@@ -55,7 +55,7 @@ collections:
           label_singular: 'Tag',
           name: 'tags',
           widget: 'list',
-          summary: '{{fields.slug}}',
+          summary: '{{fields.tag}}',
           required: false,
           field:
             {
