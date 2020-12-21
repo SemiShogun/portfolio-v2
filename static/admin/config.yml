@@ -62,8 +62,7 @@ collections:
               label: Tag,
               name: tag,
               widget: relation,
-              collection: 'meta',
-              file: 'tags',
+              collection: 'tags',
               searchFields: ['tags.*.name'],
               displayFields: ['tags.*.slug'],
               valueField: 'tags.*.slug',
@@ -91,16 +90,13 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Content', name: 'body', widget: 'markdown', required: false }
       - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
-  - name: 'meta'
-    label: 'Meta'
-    delete: false
+  - label: 'Tags'
+    name: 'tags'
+    file: 'assets/content/tags.json'
+    format: 'json'
+    description: 'Contains list of tags'
     editor:
       preview: false
-    files:
-      - name: 'tags'
-        label: 'Tags'
-        file: 'assets/content/meta/tags.json'
-        description: 'Contains list of tags'
-        fields:
-          - { label: 'Slug', name: 'slug', widget: 'string', hint: 'URL identifier' }
-          - { label: 'Display Name', name: 'name', widget: 'string', hint: 'Tag name to be displayed' }
+    fields:
+      - { label: 'Slug', name: 'slug', widget: 'string', hint: 'URL identifier' }
+      - { label: 'Display Name', name: 'name', widget: 'string', hint: 'Tag name to be displayed' }
