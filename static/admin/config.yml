@@ -101,8 +101,11 @@ collections:
         file: 'assets/content/tags.json'
         format: 'json'
         description: 'Contains list of tags'
-        editor:
-          preview: false
         fields:
-          - { label: 'Slug', name: 'slug', widget: 'string', hint: 'URL identifier' }
-          - { label: 'Display Name', name: 'name', widget: 'string', hint: 'Tag name to be displayed' }
+          - label: Tags
+            name: tags
+            label_singular: 'Tag'
+            widget: list
+            fields:
+              - { label: 'Slug', name: 'slug', widget: 'string', hint: 'URL identifier' }
+              - { label: 'Display Name', name: 'name', widget: 'string', hint: 'Tag name to be displayed' }
