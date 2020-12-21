@@ -57,7 +57,17 @@ collections:
           widget: 'list',
           summary: '{{fields.tag}}',
           required: false,
-          field: { label: Tag, name: tag, widget: relation, collection: 'meta', file: 'tags' },
+          field:
+            {
+              label: Tag,
+              name: tag,
+              widget: relation,
+              collection: 'meta',
+              file: 'tags',
+              searchFields: - "tags.*.name",
+              displayFields: - "tags.*.slug",
+              valueField: 'tags.*.slug',
+            },
         }
   - name: 'projects'
     # identifier_field: name
