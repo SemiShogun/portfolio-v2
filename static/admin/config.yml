@@ -64,8 +64,8 @@ collections:
               widget: relation,
               collection: 'meta',
               file: 'tags',
-              searchFields: - "tags.*.name",
-              displayFields: - "tags.*.slug",
+              searchFields: ['tags.*.name'],
+              displayFields: ['tags.*.slug'],
               valueField: 'tags.*.slug',
             },
         }
