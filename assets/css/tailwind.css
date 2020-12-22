@@ -1,3 +1,28 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+html,
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+body {
+  background-image: url('../../static/japan_pixel_evening.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  height: 100%;
+}
+
+.container-color {
+  background: rgba(113, 128, 150, 0.65);
+}

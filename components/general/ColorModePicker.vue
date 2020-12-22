@@ -15,11 +15,11 @@ export default {
   components: {
     IconSystem,
     IconLight,
-    IconDark
+    IconDark,
   },
   data() {
     return {
-      color: COLOR_MODE_FALLBACK
+      color: COLOR_MODE_FALLBACK,
     }
   },
   watch: {
@@ -34,8 +34,8 @@ export default {
         } else {
           this.color = COLOR_MODE_FALLBACK
         }
-      }
-    }
+      },
+    },
   },
   methods: {
     changeColorMode() {
@@ -52,12 +52,12 @@ export default {
         default:
           return (this.$colorMode.preference = COLOR_MODE_FALLBACK)
       }
-    }
-  }
+    },
+  },
 }
 </script>
 
-<style lang="postcss" scoped>
+<style scoped>
 .icon {
   width: 44px;
   height: 44px;

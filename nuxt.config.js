@@ -58,7 +58,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/tailwind.css', '@/assets/css/main.pcss'],
+  css: ['@/assets/css/tailwind.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -78,20 +78,6 @@ export default {
    ** Build configuration
    */
   build: {
-    extractCSS: true,
-    postcss: {
-      plugins: {
-        'postcss-import': postcssImport,
-        tailwindcss: path.resolve(__dirname, './tailwind.config.js'),
-        'postcss-nesting': postcssNesting,
-        'postcss-preset-env': postcssPresetEnv({
-          stage: 1,
-          features: {
-            'nesting-rules': false
-          }
-        })
-      }
-    },
     /*
      ** You can extend webpack config here
      */

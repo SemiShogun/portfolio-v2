@@ -1,8 +1,15 @@
 <template>
-  <div class="main text-center flex flex-col items-center justify-center">
+  <div class="flex flex-col items-center justify-center rounded-md container-color text-white p-6">
     <!-- <logo /> -->
-    <h1 class="title">Nuxt — Tailwind — Netlify CMS</h1>
-    <h2 class="subtitle">Boilerplate</h2>
+    <div class="flex flex-col w-1/2">
+      <div class="font-bold text-2xl">About Myself</div>
+      <div class="font-light">
+        Hello everyone! NectoJ here. I’m a developer from the snowy alps of Zürich, Switzerland. I have a fond interest
+        when it comes to learning programming, technologies, tools and especially JS/TS frameworks. You’ll discover some
+        of my various blog posts on this website regarding my current projects, ideas, reviews, writings, et cetera.
+      </div>
+      <div class=""></div>
+    </div>
   </div>
 </template>
 
@@ -15,8 +22,8 @@ export default {
   // },
   head() {
     return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
     }
-  }
+  },
 }
 </script>

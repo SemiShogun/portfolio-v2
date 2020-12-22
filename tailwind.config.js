@@ -9,6 +9,10 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   theme: {
     darkSelector: '.dark-mode',
+    container: {
+      center: true,
+      padding: '2rem'
+    },
     extend: {
       fontFamily: {
         sans: ['Karla', ...defaultTheme.fontFamily.sans],

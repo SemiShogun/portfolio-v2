@@ -1,38 +1,24 @@
 <template>
-  <nav class="">
-    <ul class="flex fixed top-0 inset-x-0 p-3">
-      <li class="flex-1 mr-2">
-        <nuxt-link class="btn block" to="/">Home</nuxt-link>
+  <div id="header">
+    <ul class="flex flex-col justify-items-start wx-12 text-white">
+      <li class="flex-1 p-1 font-bold text-5xl">
+        <nuxt-link class="btn block" to="/">Nectoj</nuxt-link>
       </li>
-      <li class="flex-1 mr-2">
+      <li class="flex-1 p-1 font-light text-3xl">
         <nuxt-link class="btn block" to="/blog">Blog</nuxt-link>
       </li>
-      <li class="flex-1">
-        <nuxt-link class="btn block" to="/projects">Projects</nuxt-link>
+      <li class="flex-1 p-1 font-light text-3xl">
+        <a href="https://github.com/SemiShogun">Github</a>
       </li>
     </ul>
-  </nav>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
 }
 </script>
 
-<style lang="postcss" scoped>
-.nuxt-link-exact-active {
-  @apply text-accent-100 bg-accent bg-opacity-20;
-  &:hover {
-    @apply text-white bg-accent-600;
-  }
-}
-.light-mode {
-  & .nuxt-link-exact-active {
-    @apply text-accent-600;
-    &:hover {
-      @apply text-white;
-    }
-  }
-}
+<style scoped>
 </style>
