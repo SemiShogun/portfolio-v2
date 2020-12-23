@@ -66,6 +66,7 @@ module.exports = {
     content: ['components/**/*.vue', 'layouts/**/*.vue', 'pages/**/*.vue', 'plugins/**/*.js', 'nuxt.config.js'],
     options: {
       // Set whitelist in nuxt.config.js -> purgeCSS.whitelist: ['dark-mode', 'light-mode', 'btn', 'icon']
+      whitelist: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote']
     }
   }
 }
