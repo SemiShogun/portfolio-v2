@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center justify-center rounded-md container-color text-white p-6">
     <!-- <logo /> -->
-    <div class="flex flex-col w-1/2">
+    <div class="flex flex-col w-5/6">
       <div class="font-bold text-2xl">About Myself</div>
       <div class="font-light">
         Hello everyone! NectoJ here. I’m a developer from the snowy alps of Zürich, Switzerland. I have a fond interest

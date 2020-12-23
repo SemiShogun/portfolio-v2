@@ -11,7 +11,7 @@ module.exports = {
     darkSelector: '.dark-mode',
     container: {
       center: true,
-      padding: '2rem'
+      padding: '8rem'
     },
     extend: {
       fontFamily: {

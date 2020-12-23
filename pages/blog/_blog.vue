@@ -1,13 +1,23 @@
 <template>
   <article v-if="blogPost" class="main article">
-    <h1 class="article-title">{{ blogPost.title }}</h1>
-    <h6
-      v-if="blogPost.date"
-      class="inline-block py-1 px-2 my-2 bg-accent text-white font-medium rounded-sm dark:bg-accent whitespace-no-wrap"
-    >
-      {{ formatDate(blogPost.date) }}
-    </h6>
-    <div v-html="$md.render(blogPost.body)" />
+    <div class="flex flex-col items-center justify-center rounded-md container-color text-white p-6">
+      <!-- <logo /> -->
+      <div class="flex flex-col w-5/6">
+        <div class="flex flex-row justify-center items-center">
+          <img class="object-cover h-16 w-16 border-2" :src="`${blogPost.seoMetaImage}`" alt="Blog Image" />
+          <h1 class="text-3xl font-bold ml-6">{{ blogPost.title }}</h1>
+        </div>
+        <div class="flex flex-col mt-5">
+          <div v-html="$md.render(blogPost.body)"></div>
+        </div>
+        <hr class="rounded mt-6 mb-6 border-white border-b-2" />
+        <div class="flex flex-row justify-end">
+          <h6 v-if="blogPost.date" class="bg-orange-400 rounded pl-2 pr-2 pt-1 pb-1">
+            {{ formatDate(blogPost.date) }}
+          </h6>
+        </div>
+      </div>
+    </div>
   </article>
 </template>
 <script>
