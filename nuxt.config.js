@@ -89,7 +89,7 @@ export default {
   },
   purgeCSS: {
     mode: 'postcss',
-    whitelist: ['dark-mode', 'light-mode', 'btn', 'icon', 'main'],
+    whitelist: ['dark-mode', 'light-mode', 'btn', 'icon', 'main', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote'],
     whitelistPatterns: [/^article/, /image$/]
   },
   colorMode: {
