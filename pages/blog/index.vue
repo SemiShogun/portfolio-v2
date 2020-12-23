@@ -8,7 +8,7 @@
           <nuxt-link :to="`blog/${blogPost.slug}`" class="article article--clickable">
             <div class="flex justify-between align-baseline items-center mt-5">
               <img class="object-cover h-16 w-16 border-2" :src="`${blogPost.seoMetaImage}`" alt="Blog Image" />
-              <div class="flex flex-row justify-between items-center h-24 w-5/6">
+              <div class="flex flex-row justify-between items-center h-24 ml-2 w-5/6">
                 <h3 class="text-xl font-bold">{{ blogPost.title }}</h3>
                 <h6 v-if="blogPost.date" class="bg-orange-400 rounded pl-2 pr-2 pt-1 pb-1">
                   {{ formatDate(blogPost.date) }}
