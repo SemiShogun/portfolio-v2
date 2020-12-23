@@ -1,4 +1,4 @@
-<template>
+<template lang="md">
   <main v-if="blogPosts" class="main">
     <div class="flex flex-col items-center justify-center rounded-md container-color text-white p-6">
       <!-- <logo /> -->
