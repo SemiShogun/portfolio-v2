@@ -11,6 +11,7 @@
           <div v-html="$md.render(blogPost.body)"></div>
         </div>
         <hr class="rounded mt-6 mb-6 border-white border-b-2" />
+        <div id="remark42"></div>
         <div class="flex flex-row justify-end">
           <h6 v-if="blogPost.date" class="bg-orange-400 rounded pl-2 pr-2 pt-1 pb-1">
             {{ formatDate(blogPost.date) }}
