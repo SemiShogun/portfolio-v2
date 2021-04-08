@@ -3,6 +3,10 @@
     {
       "slug": "Hello",
       "name": "Hello"
+    },
+    {
+      "slug": "/programming",
+      "name": "Programming"
     }
   ]
 }
