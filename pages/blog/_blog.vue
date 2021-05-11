@@ -32,7 +32,7 @@ export default {
   },
   head() {
     return {
-      script: [{ src: '~assets/js/remark42.js' }],
+      script: [{ src: 'js/remark42.js' }],
     }
   },
   methods: {
