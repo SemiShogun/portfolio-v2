@@ -30,6 +30,11 @@ export default {
         blogPost: await require(`~/assets/content/blog/${params.blog}.json`),
       }
   },
+  head() {
+    return {
+      script: [{ src: '~assets/js/remark42.js' }],
+    }
+  },
   methods: {
     formatDate(dateString) {
       const date = new Date(dateString)
