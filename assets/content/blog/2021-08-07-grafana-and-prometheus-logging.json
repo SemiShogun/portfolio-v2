@@ -1,5 +1,5 @@
 {
-  "date": "2021-07-19T19:16:17.332Z",
+  "date": "2021-08-07T20:40:45.713Z",
   "title": "Grafana and Prometheus logging",
   "body": "Ever wanted to create a backend logging service for your Spring Boot project? Well look no further. \n\n\n\nRequirements:\n\n\\- Spring boot application with Log4J setup\n\n\\- Self-managed Grafana software (Download URL: https://grafana.com/get/?plcmt=top-nav&cta=downloads&tab=self-managed)",
   "tags": [
